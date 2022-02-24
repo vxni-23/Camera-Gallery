@@ -114,7 +114,9 @@ captureBtnCont.addEventListener("click", (e) => {
         }
         imageStore.add(imageEntry);
     }
-    captureBtn.classList.remove("scale-capture");
+    setTimeout(() => {
+        captureBtn.classList.remove("scale-capture");
+    }, 1000);
 
     // let a = document.createElement("a");
     // a.href = imageURL;
