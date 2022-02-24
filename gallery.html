@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet", type="text/css", href="gallery.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">BACK</div>
+    <div class="gallery-cont">
+        <div class="media-cont">
+            <div class="media"></div>
+            <div class="download action-btn">Download</div>
+            <div class="delete action-btn">Delete</div>
+        </div>
+    </div>
+
+    <script src="./db.js"></script>
+    <script>
+        let backBtn = document.querySelector(".back");
+        backBtn.addEventListener("click", function(e){
+            location.assign("./camera.html");
+        })
+    </script>
+</body>
+</html>
